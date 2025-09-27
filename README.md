@@ -20,6 +20,8 @@ Prosperity Bank has observed failed logins on Windows 10 and privilege escalatio
 <p align="center">
 Simulating Brute force attack on Windows 10 Workstation and its log capture in Event Viewer: <br/>
 <img src="https://i.imgur.com/n3FVZPm.png" height="70%" width="70%" alt="network-setup" border="0">
+<img src="https://i.imgur.com/FULq3Lo.png" height="70%" width="70%" alt="network-setup" border="0">
+<img src="https://i.imgur.com/qHVdof6.png" height="70%" width="70%" alt="network-setup" border="0">  
 <br />
 <br />
 The configuration phase: <br/>
