@@ -5,10 +5,10 @@ Prosperity Bank has observed failed logins on Windows 10 and privilege escalatio
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>Wazuh</b>
-  <b>Ubuntu-VM</b>
-  <b>Windows 10-VM</b>
-  <b>Wireshark</b>
+- <b>Wazuh, </b>
+  <b>Ubuntu-VM, </b>
+  <b>Windows 10-VM, </b>
+  <b>Wireshark, </b>
   <b>pfSense</b>
 
 - <h2>Program walk-through:</h2>
