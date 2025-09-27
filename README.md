@@ -50,6 +50,7 @@ Ubuntu Server
 
 - <h4> Phase 3: Mitigation </h4>
 1. Propose Improvements
+<p align="center">
 ⚬ Configure pfSense VLAN segmentation with at least two VLANs:
 <img src="https://i.imgur.com/lattrvL.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
 <br />
@@ -67,23 +68,14 @@ Ubuntu Server
 
 <p align="center">  
 ￭ VLAN 2: Backend servers (Ubuntu).
-<img src="" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+<img src="https://i.imgur.com/SGhCLd8.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
 <br />
 
-⚬ Monitor privilege escalation attempts and new user
-creation events.
+<p align="center">  
+⚬ Setting firewall rules for the DMZ VLAN
+<img src="https://i.imgur.com/QYjdZ0W.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+<br />
 
-
-
-  
-Initiating the process:  <br/>
-<img src="https://i.ibb.co/dJbx6nFP/initiating-the-connection.png" height="70%" width="70%" alt="initiating-the-connection" border="0">
-<br />
-<br />
-Network setup completed:  <br/>
-<img src="https://i.ibb.co/7tt7kHGF/completed-network.png" height="70%" width="70%" alt="completed-network" border="0">
-<br />
-<br />
 </p>
 
 
