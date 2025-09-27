@@ -34,7 +34,7 @@ Ubuntu Server
 <img src="https://i.imgur.com/XZY69vF.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
 <br />
 
-- <h4> Phase 2: Network Activity</h4>
+- <h4> Phase 2: Network Activity & Capture</h4>
 
 <p align="center">
 ⚬ Perform basic scanning and ping from kali to Windows
@@ -47,6 +47,31 @@ Ubuntu Server
 <img src="https://i.imgur.com/1HhPjxW.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
 <img src="https://i.imgur.com/MgW1KAt.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
 <br />
+
+- <h4> Phase 3: Mitigation </h4>
+1. Propose Improvements
+⚬ Configure pfSense VLAN segmentation with at least two VLANs:
+<img src="https://i.imgur.com/lattrvL.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+
+
+<p align="center">
+￭ VLAN 1: Employee workstations (Windows).
+<img src="https://i.imgur.com/iZu6Aoq.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+<img src="https://i.imgur.com/wFW4fhf.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+
+<p align="center">  
+￭ Setting firewall rules for Windows Workstation VLAN
+<img src="https://i.imgur.com/PnB3L39.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+
+<p align="center">  
+￭ VLAN 2: Backend servers (Ubuntu).
+<img src="" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+
+⚬ Monitor privilege escalation attempts and new user
+creation events.
+
+
+
   
 Initiating the process:  <br/>
 <img src="https://i.ibb.co/dJbx6nFP/initiating-the-connection.png" height="70%" width="70%" alt="initiating-the-connection" border="0">
