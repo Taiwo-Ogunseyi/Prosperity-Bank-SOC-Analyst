@@ -13,8 +13,8 @@ Prosperity Bank has observed failed logins on Windows 10 and privilege escalatio
 
 - <h2>Program walk-through:</h2>
 
-- <h4> Phase 1: Simulation </h4>
-1. Windows 10 Workstation - Perform repeated failed login attempts (6–8 times).
+- <h4> Phase 1: Simulation & Detection</h4>
+Windows 10 Workstation - Perform repeated failed login attempts (6–8 times).
 
 <p align="center">
 Simulating Brute force attack on Windows 10 Workstation and its log capture in Event Viewer & Wazuh: <br/>
@@ -24,17 +24,30 @@ Simulating Brute force attack on Windows 10 Workstation and its log capture in E
 <br />
 <br />
 
-2. Ubuntu Server
+Ubuntu Server
 <p align="center">
 ⚬ Run privilege escalation commands (sudo su,sudo -l).
 <img src="https://i.imgur.com/FFxqXIf.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
 <br />
 <p align="center">
 ⚬ Create a suspicious user (sudo useradd hacker).
-<img src="" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+<img src="https://i.imgur.com/XZY69vF.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
 <br />
 
+- <h4> Phase 2: Network Activity</h4>
 
+<p align="center">
+⚬ Perform basic scanning and ping from kali to Windows
+<img src="https://i.imgur.com/99tt1br.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+<img src="https://i.imgur.com/Z1rDqG5.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+<br />
+
+<p align="center">
+⚬ Perform basic scanning and ping from kali to Ubuntu.
+<img src="https://i.imgur.com/1HhPjxW.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+<img src="https://i.imgur.com/MgW1KAt.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+<br />
+  
 Initiating the process:  <br/>
 <img src="https://i.ibb.co/dJbx6nFP/initiating-the-connection.png" height="70%" width="70%" alt="initiating-the-connection" border="0">
 <br />
