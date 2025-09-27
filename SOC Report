@@ -1,0 +1,36 @@
+SOC Executive Summary – Threat Overview
+Date: 5th Sept., 2025
+
+The SIEM detected multiple suspicious activities within the Prosperity Bank corporate network. Alerts were triggered for brute force login attempts, unauthorized insider data access, and lateral movement attempts. These incidents indicate both external and internal threats targeting user accounts and sensitive resources.
+
+Overall Impact:
+These incidents represent attempts to compromise user accounts, steal sensitive data, and expand access within the Prosperity Bank corporate network.
+If successful, they could result in data theft, financial loss, regulatory fines, and reputational damage for Prosperity Bank.
+Immediate containment actions were initiated, including account lockouts, network segmentation using VLANs, monitoring privilege escalation attempts and new user creation events.
+
+1. Brute‑Force Attacks
+What happened: Attackers tried repeatedly to guess login passwords against our user accounts on Windows 10. Most attempts were stopped by Windows automated defenses. Shown in Fig. 1
+Key Detections:  
+Alert: “Excessive Authentication Failures”
+Rule Triggered: >8 failed logins within 2 minute from same source
+Severity: High
+Impact Overview:
+Even a single compromised account can give an attacker a foothold, allowing them to explore the network or target higher‑value assets.
+
+2. Insider Threat
+What happened: A legitimate employee attempted to access sensitive system file (/etc/shadow) which is beyond what their role required. This action is outside of normal user behavior and suggests possible malicious insider activity. The activity was flagged by our behavior‑monitoring tools. Shown in Fig. 2
+Key Detections:  
+Alert: “Unauthorized access attempt – sensitive file”
+Rule Triggered: Attempted read of  /etc/shadow
+Severity: Critical
+Impact Overview:
+Insider actions can bypass perimeter defenses, causing an attempt to extract hashed credentials from /etc/shadow, password cracking and privilege escalation (if successful), and serious risk to system and account integrity.
+
+3. Lateral Movement
+What happened: A compromised account executed privilege escalation commands (sudo su, sudo -l) and created a suspicious user (hacker) with administrative rights. These actions are strong indicators of lateral movement and persistence techniques. As shown in Fig. 3
+Key Detections:  
+Alert: “Privilege Escalation Attempt”
+Alert: “Suspicious Account Creation”
+Severity: Critical
+Impact Overview: Lateral movement can amplify the impact of an initial breach, turning a single compromised host into a full‑network compromise. This poses a severe risk to the confidentiality, integrity, and availability of business systems of Prosperity Bank.
+
