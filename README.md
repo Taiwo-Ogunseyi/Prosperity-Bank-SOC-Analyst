@@ -52,20 +52,23 @@ Ubuntu Server
 1. Propose Improvements
 ⚬ Configure pfSense VLAN segmentation with at least two VLANs:
 <img src="https://i.imgur.com/lattrvL.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
-
+<br />
 
 <p align="center">
 ￭ VLAN 1: Employee workstations (Windows).
 <img src="https://i.imgur.com/iZu6Aoq.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
 <img src="https://i.imgur.com/wFW4fhf.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
-
+<br />
+  
 <p align="center">  
 ￭ Setting firewall rules for Windows Workstation VLAN
 <img src="https://i.imgur.com/PnB3L39.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+<br />
 
 <p align="center">  
 ￭ VLAN 2: Backend servers (Ubuntu).
 <img src="" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+<br />
 
 ⚬ Monitor privilege escalation attempts and new user
 creation events.
