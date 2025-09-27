@@ -14,20 +14,27 @@ Prosperity Bank has observed failed logins on Windows 10 and privilege escalatio
 - <h2>Program walk-through:</h2>
 
 - <h4> Phase 1: Simulation </h4>
-1. Windows 10 Workstation
-⚬ Perform repeated failed login attempts (6–8 times).
+1. Windows 10 Workstation - Perform repeated failed login attempts (6–8 times).
 
 <p align="center">
-Simulating Brute force attack on Windows 10 Workstation and its log capture in Event Viewer: <br/>
+Simulating Brute force attack on Windows 10 Workstation and its log capture in Event Viewer & Wazuh: <br/>
 <img src="https://i.imgur.com/n3FVZPm.png" height="70%" width="70%" alt="network-setup" border="0">
 <img src="https://i.imgur.com/FULq3Lo.png" height="70%" width="70%" alt="network-setup" border="0">
-<img src="https://i.imgur.com/qHVdof6.png" height="70%" width="70%" alt="network-setup" border="0">  
+<img src="https://i.imgur.com/ODzzrzO.png" height="70%" width="70%" alt="network-setup" border="0">  
 <br />
 <br />
-The configuration phase: <br/>
-<img src="https://i.ibb.co/5WYFt9S6/Screenshot-2025-07-31-215338.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
+
+2. Ubuntu Server
+<p align="center">
+⚬ Run privilege escalation commands (sudo su,sudo -l).
+<img src="https://i.imgur.com/FFxqXIf.png" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
 <br />
+<p align="center">
+⚬ Create a suspicious user (sudo useradd hacker).
+<img src="" height="70%" width="70%" alt="Screenshot-2025-07-31-215338" border="0">
 <br />
+
+
 Initiating the process:  <br/>
 <img src="https://i.ibb.co/dJbx6nFP/initiating-the-connection.png" height="70%" width="70%" alt="initiating-the-connection" border="0">
 <br />
